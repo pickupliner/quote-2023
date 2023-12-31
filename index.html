@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>quote 2023</title>
+</head>
+<body>
+<style>
+    .button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    font-size:150px
+}
+body{
+    text-align: center;
+    background-color: #262830;
+    }
+
+
+
+
+
+</style>
+<div>
+<button style="color: #49f4ff;" class="button" onclick="fun()" id="q" >  </button>
+</div>
+<div>
+<button style="color: #ff0000;" class="button" onclick="fun2()" id="n">  start   </button>
+</div>
+
+
+
+<script>
+var wheel={'Fock rechten, vrouwen hebbe die toch geen ' : ' ben V',
+'Laat los, ik moet een man in de kont pakken ' : ' Ninyann 2023',
+'Wees maar slim dan voel ik me blind ' : ' maxi 2023',
+'Ik vind da echt ni tof da jij mij in de kont neemt ' : ' Celle 2023',
+'Wel mijn maatje maar niet jou gaatje ' : ' Celle 2023',
+'Maandag avond is joga avond ' : ' mevrouw colignon 2023',
+'Da zijn vrouwen hè die hebben minder rechten ' : ' Celle 2023',
+'Zwart is slecht ' : ' ben V 2023',
+'Ik hou van zwarte mannen ' : ' Evelyn 2023',
+'Zeg mijn kat is aan het grillen ' : ' Katrien 2023',
+'Ik maak het nat met Joe biden ' : ' Celle 2023',
+'Da trilt kapot hard aan men ballen ' : ' Louis 2023',
+'Auwrgh (tegen bomma) ' : 'maxim 2023'
+              }
+
+var quotes ={'Mannen hebben geen rechten ' : ' Emelie 2023',
+'Wat zit jij in mijn saus ' : ' Merel 2023',
+'Kom naar hier en zuig mijne kakker ' : ' BenV 2023',
+'Eh das ne penis ' : ' Ben Daelemans 2023',
+'Help mijn boyfriend is weg ' : ' Ninyann 2023',
+'Als je het doet, doe het goed, zonder broek ' : ' Merel 2023',
+'Dat is een coole vinger, die wil ik in men aars ' : ' Maxim 2023',
+'Ik heb een mening want ik ben een man ' : ' maxim 2023',
+'Zuig mijne lul ' : ' merel 2023',
+'Gisteren was echt mijn natste dag ' : ' Louis 2023',
+'Waarom zit jij aan mijne stok ' : ' Celle 2023',
+'2 uur extra studeren gaat echt niks doen ' : ' Kyan 2023',
+'Groene nuts zijn de beste nuts ' : ' Filip 2023',
+'I like Cock ( heigend) ' : ' maxi 2023',
+'Shreknuts ' : ' Jon 2023',
+'Moan ' : ' Jon 2023',
+'Pif poef paf alle rechten eraf ' : ' Jon 2023',
+'Ik deed u mama ' : ' merel 2023',
+'Ik heb het gedaan met de Jos ' : ' Celle 2023',
+'Cadeautje zit in men broek ' : ' Celle 2023',
+'Ik voel mij bevredigd ' : ' Celle 2023',
+'Wit wit wit rechten ' : ' Celle 2023',
+'Ik hou wel van zuigen ' : ' merel 2023',
+'Mag ik is trekken ' : ' Louis 2023',
+'Fock rechten, vrouwen hebbe die toch geen ' : ' ben V',
+'Laat los, ik moet een man in de kont pakken ' : ' Ninyann 2023',
+'Wees maar slim dan voel ik me blind ' : ' maxi 2023',
+'Ik vind da echt ni tof da jij mij in de kont neemt ' : ' Celle 2023',
+'Wel mijn maatje maar niet jou gaatje ' : ' Celle 2023',
+'Maandag avond is joga avond ' : ' mevrouw colignon 2023',
+'Da zijn vrouwen hè die hebben minder rechten ' : ' Celle 2023',
+'Zwart is slecht ' : ' ben V 2023',
+'Ik hou van zwarte mannen ' : ' Evelyn 2023',
+'Zeg mijn kat is aan het grillen ' : ' Katrien 2023',
+'Ik maak het nat met Joe biden ' : ' Celle 2023',
+'Da trilt kapot hard aan men ballen ' : ' Louis 2023',
+'Auwrgh (tegen bomma) ' : 'maxim 2023',
+'Daar plakt uw hele keel van ' : 'Ben V 2023',
+'Celle waarom bent gy een kasteel' : 'sam 2023',
+'Amai uw binnekant is mooi' : 'ben D. 2023',
+'Kun je me even helpen, ik ben groteren gewend' : 'moslim, bismillah 2023',
+'Zijn da kwilteitsvolle kindjes?' : 'ninja 2023',
+'Ja Celle, Ik ben een bitch geweest, ik heb een levende vis ingeslikt ' : 'mvr verhoeven 2023',
+'Zeg ma geeft gij geen uur vr zat vanaf wnr ik mag komen want kwil snel komen ma ook ni te snel en idk wa vr jullie het gemakkelijkste is' : 'Ems 2023',
+'Crazy? ' : 'Celle 2023',
+'Say no to vape, say yes to rape' : 'Ben D. 2023',
+'Bent gy dom? Een kat is toch ook geen poes ' : 'ninyann 2023',
+'Rainbow! Fuck ben ik lgbbq' : 'Merel 2023',
+'Andrew tate is een aldi Jordan Peterson' : 'Jefke 2023',
+'Life is a bitch. Learn how to fuck it.' : 'Celle 2023',
+'Mijn geluk is waar m’n stella staat' : 'Lode 2023',
+'Voor degene die willen kunnen op vakantie gaan in Celle ' : 'mvr Boden 2023',
+'ik wil iets om in mijn bakkes te douwen' : 'Louis 2023',
+'Weih weih weih, Mijn koekje is te klein' : 'Ninja Boji 2023',
+'De Celle Sweep! ' : 'Maxi 2023',
+'“Niet ankeren in de vaargeul!”' : 'Vincent 2023',
+'Thick thighs save lives' : 'Lode 2023',
+'Is daar gratis eten?!' : 'Chloe 2023',
+'Concentraré non foefelaré ' : 'Van Wellen 2023',
+'Wat in de hitler is dit nu weer ' : ' Katrien 2023',
+'Eveline vaped ' : ' maxim 2023',
+'Don’t do drugs do kids ' : ' Louis 2023',
+'Ik wordt al hard als ik er aan denk ' : ' Ninyann 2023',
+'Wat een Waal, hij doet niks ' : ' Jon 2023',
+'Ik vape ' : ' Evelyn 2023',
+'Gekke love triangle rond merel ' : ' maxim 2023',
+'Je hebt men bakkes nat gemaakt ' : ' Louis 2023',
+'Ik ben een handicap ' : ' ben V 2023',
+'Als wij vallen dan heeft de grond pijn ' : ' Erik 2023',
+'peys does not share food, wants to sleep but do not share food ' : ' mevr peys 2023',
+'Mijn banaan is gemaakt van steen ' : ' Noah 2023',
+'Zou ik kinderen pakken ' : ' Maxi 2023',
+'Ik ben een professionele idioot, da lukt mij ' : ' maxi 2023',
+'Ze spelen met mij maar niet op de goede manier ' : ' maxi 2023',
+'Klojo ' : ' Ato 2023',
+'what happens when gone, stays gone ' : 'Kyan 2023',
+'ballen in notenkraker (5/100)' : 'Ninyann 2023',
+'Iemand anders krijgt mijne wortel wel ' : 'Evelyn 2023',
+' Ik ben nog een jonge spruit ' : 'Sam Hemati 2023',
+'“nothing in the world is better then cannibalism” ' : 'sam hemati 2023',
+'"Dees is als een homeless clown met his dick out, die 5 vodkaflesse heeft opgezope en u aanstaart me een shotgun. Dan 10 shotgun shells in u lijf schiet. Ma gij moe dan blij zijn omda gij anders een polar bear moest bevechte me genoeg methamphetamines in zijn bloed om heel florida te annihilate." ' : ' kyan van uffelen 2023',
+'Er zijn meningen en er zijn slechte meningen' : 'Maxi 2023',
+'Wajo da is een immens grote banaan ' : ' ben V 2023',
+'Hij is een vrouw ' : ' ninyann 2023',
+'Gaat dat over negers die elkaar in de poep nemen ' : ' emelie 2023',
+'Fock Ben ' : ' Mark 2023',
+'Ik haat alle zwarten ' : ' ninyann 2023',
+'I wanted Some illegal weat , but they didn’t want to give me some ' : ' Ben V 2023',
+'Ik wordt langs voor en langs achter gepakt ' : ' Celle 2023',
+'Je moet gewoon zuigen. Da kan je wel ' : ' ben V 2023',
+'Alcohol is alcohol ' : ' Noah 2023',
+'Soms is een dagje vakeschi ' : ' emelie 2023',
+'Fock Nigers ' : ' Mark 2023',
+'I hate black people ' : ' mark 2023',
+'I really hate black people ' : ' mark 2023',
+'Ik stink zoizo al ' : ' ben V 2023',
+'Ik kom echt hard voor jou kontje Noah ' : ' Ben V 2023',
+'Nu kom ik je lul zuigen man ' : ' ben V naar Maxim - 2023',
+'Tis hier te duur voor moslims ' : ' emelie 2023',
+'Vrijdag drink dag ' : ' Louis 2023',
+'Ooh die wordt door mevrouw gepakt ' : ' Louis 2023',
+'Punten zijn zoals een stoplicht, zolang het niet rood is GAAN ' : ' maxi 2023',
+'Moet ik deze worst in jou kont steken ' : ' Manu 2023',
+'Bruin, zwart en wit: je bent de choco combo ' : ' Celle 2023',
+'Zweefvliegen is duur ' : ' maxim 2023',
+'Ik kan ni leren ' : ' Anke 2023',
+'Die van mij is groter ' : ' Ben V 2023',
+'Ik ben pride ' : ' maxi 2023',
+'Ik weet ni meer hoe ze noemen maar nog wel hoe ze smaken ' : ' Louis 2023',
+'Mijn vingers gingen even snel dicht dan mijn mama’s benen open ' : ' Louis 2023',
+'Ik speel met iemand van het 2de ' : ' maxi 2023',
+'Wist je dat een asteroïde de maan heeft geraakt' : 'Wist je dat een asteroïde de maan heeft geraakt',
+'Jode uuh lode ' : ' Arthur 2023',
+'Dernet was ik mijn kont aan het afvegen en bro da was een struggle ' : ' Celle 2023',
+'Kyan ik zit in jou poep ' : ' ben D 2023',
+'Ik ben geen stuk kak, ik ben gewoon bruin ' : ' Louis 2023',
+'Ik ben een vlieghoer' : ' Arno 2023',
+'Ik ben niet echt voor dieren alleen als ze op men bord liggen ' : ' Noah 2023',
+'I Would never suck a dick but if I have to I would break a record ' : ' Sam 2023',
+'Grietje hebben geen iq ' : ' Louis 2023',
+'I have been gangbangt zo hard and I liked it ' : ' Sam 2023',
+'If a sign prohibits you it is fun to do ' : ' kyan 2023',
+'Catch flights not feelings ' : ' kyan 2023',
+'"Ankles broken ,child stolen" ' : ' Celle Huygen 2023',
+'"If he whip out the cock,we whip out the glock" ' : '  celle huygen 2023',
+'Mijn reet is masiv ' : ' maxim 2023',
+'Je kan wel een negatieve vierkantswortel nemen ' : ' Daan 2023',
+'Ni janken maar tanken ' : ' Sam 2023',
+'Die dingen waren duur hoor ' : ' Sam over slaven 2023',
+'Ik ben bang om te praten ' : ' maxim 2023',
+'live laugh love':'liv 2023',
+'cock correctie':'maxim 2023',
+'Een ziekte dat ze nooit van het straat is geraakt':'Mevr Verhoeven over Mevr Colignon 2023'
+              }
+var dquotes= {"Ben jij aan het vingeren":[",ja","maxim en maxi 2023"],
+                "Wtf ben jij aan het doen":[",een man","Ninyann en Arthur 2023"],
+                "Ik ben slap":[",yep","maxim en Louis 2023"],
+                "Wil jij mijn stokje zuigen":[",ja","maxim en ben V 2023"],
+                "Wie wilt er gaan padellen ? ":[" bedoel jij kajakken ?","Arthur en Celle 2023"],
+                "Ik heb die meme al gezien":[",well consider yourself blessed, the ability to gaze upon such majestic pieces of art, not only once but twice is something worth cherishing for the rest of your days.","Sam Hemati & Kyan Van Uffelen 2023"]
+
+
+
+                }
+
+var p=1/(Object.keys(dquotes).length*(1/(Object.keys(dquotes).length)+1/(Object.keys(quotes).length)))
+
+function ran(min, max) {
+    min = Math.ceil(min);
+    max = Math.round(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function textSequence1(i) {
+
+            if (4 > i) {
+                setTimeout(function() {
+                    document.getElementById("q").innerHTML = Object.keys(wheel)[i];
+                    console.log(i)
+
+                    textSequence1(++i);
+                }, i*100); // 1 second (in milliseconds)
+
+            } else  {
+                key=Object.keys(dquotes)[ran(0,Object.keys(dquotes).length-1)]
+                document.getElementById("q").innerHTML=key
+                await sleep(1000)
+                document.getElementById("q").innerHTML=key+"\n"+dquotes[key][0];
+            }
+
+        }
+
+function textSequence2(i) {
+
+            if (4 > i) {
+                setTimeout(function() {
+                    document.getElementById("q").innerHTML = Object.keys(wheel)[i];
+                    console.log(i)
+
+                    textSequence2(++i);
+                }, i*100); // 1 second (in milliseconds)
+
+            } else  {
+                key=Object.keys(quotes)[ran(0,Object.keys(quotes).length-1)]
+                console.log(key)
+                document.getElementById("q").innerHTML=key;
+            }
+
+        }
+
+
+
+
+
+async function fun2(){
+dec= ran(1,1/p)
+if (Object.keys(quotes).length<=0){
+dec=5
+
+
+}
+if(Object.keys(dquotes).length<=0){
+dec=1
+
+}
+
+
+
+console.log(Object.keys(quotes).length)
+console.log(Object.keys(dquotes).length)
+if (document.getElementById("n").innerHTML=="restart"){
+
+document.location.reload()
+
+
+}
+
+if(Object.keys(quotes).length<=0  && Object.keys(dquotes).length<=0 ){
+key="game over, happy new years !!!"
+document.getElementById("q").innerHTML=key
+document.getElementById("n").innerHTML=""
+}
+else{
+if (dec==1){
+
+document.getElementById("n").innerHTML=""
+textSequence2(0)
+
+}
+else{
+
+document.getElementById("n").innerHTML=""
+textSequence1(0)
+
+
+
+
+}
+}
+}
+
+
+
+
+function fun(){
+
+
+if (key=="game over, happy new years !!!"){
+document.getElementById("n").innerHTML="restart"
+
+}
+else{
+if (dec==1){
+if (typeof(quotes[key]) == 'undefined'){
+document.getElementById("n").innerHTML="continue"
+}else{
+
+document.getElementById("n").innerHTML=quotes[key]
+delete quotes[key]
+
+
+
+
+
+
+}
+}
+else{
+if (typeof(dquotes[key]) == 'undefined'){
+document.getElementById("n").innerHTML="continue"
+}else{
+
+document.getElementById("n").innerHTML=dquotes[key][1]
+delete dquotes[key]
+console.log(dquotes)
+
+
+
+
+
+
+}
+
+
+}
+}
+}
+</script>
+
+</body>
+</html>
